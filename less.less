@@ -1,0 +1,54 @@
+@li-width: 152px;
+@li-height: 25px;
+@base:#2c8bb7;
+@base-light:lighten(@base, 10%);
+@base-lighter:lighten(@base,  35%);
+        
+                            
+                        
+.current {
+    display: block;
+    color: red;
+    background-image: url(//s.wlfcdn.com/giftcards/cms_proper/CMS-376/v1/dashboard-sprite.png);
+    background-position: -385px 0;
+    width: (@li-width + 14) !important;
+    height: (@li-height + 13) !important;
+    padding: 0 !important;
+    margin: 18px 3px 0 0 !important;
+    cursor: pointer;
+    ul {
+        margin: 0 0 0 9px;
+        padding: 0;
+        border: 1px solid @base-light;
+        width: @li-width;
+        background-color: @base;
+        li {
+            padding: 0;
+            margin: 0;
+            font-size: 11px;
+            width: @li-width;
+            height: @li-height;
+            border-bottom: 1px solid @base-lighter;
+            background-color: @base;
+            a {
+                padding: 0;
+                margin: 0;
+                display: block;
+                width: @li-width;
+                height: @li-height;
+                line-height: @li-height;
+                color: #FFF;
+                text-decoration: none;
+                text-indent: 13px;
+            }
+            a:hover {
+                color: @base-lighter;
+                display: block;
+                width: @li-width;
+                background-color: @base-light;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+﻿#gcImages {
+    list-style: none;
+}
+
+    #gcImages li {
+        float: left;
+        margin:5px;
+    }
